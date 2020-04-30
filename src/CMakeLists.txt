@@ -73,6 +73,9 @@ set_target_properties( yaep++_static PROPERTIES OUTPUT_NAME ${YAEPXX_LIB_STATIC}
 # Install
 set( YAEP_INCLUDE
 	yaep.h
+	allocate.h
+	hashtab.h
+	objstack.h
 )
 install( TARGETS yaep_static yaep++_static DESTINATION ${CMAKE_INSTALL_LIBDIR} )
 install( FILES ${YAEP_INCLUDE} DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}" )
